@@ -1,6 +1,8 @@
-In [17]: book1.title = 'Nineteen Eighty-Four'
+In [16]: book = Book.objects.get(title = '1984')
 
-In [18]: book1.save()
+In [17]: book.title = 'Nineteen Eighty-Four'
 
-In [19]: print(book1.title)
+In [18]: book.save()
+
+In [19]: print(book.title)
 Nineteen Eighty-Four

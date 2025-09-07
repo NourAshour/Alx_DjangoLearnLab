@@ -1,4 +1,6 @@
-In [20]: book1.delete()
+In[19]: book = Book.objects.get(title = 'Nineten Eighty-Four')
+
+In [20]: book.delete()
 Out[20]: (1, {'bookshelf.Book': 1})
 
 In [22]: books = Book.objects.all()
