@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bookshelf.apps.BookshelfConfig'
 ]
 
 MIDDLEWARE = [
@@ -76,6 +77,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        'USER': 'Nour',
+        'PASSWORD': 'Nour123',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
