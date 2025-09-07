@@ -1,3 +1,5 @@
+In[18]: from bookshelf.models import Book
+
 In[19]: book = Book.objects.get(title = 'Nineten Eighty-Four')
 
 In [20]: book.delete()
