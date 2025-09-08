@@ -5,4 +5,4 @@ books = Book.objects.filter(author=author)
 books = Library.objects.get(name=library_name)
 books.all()
 
-lib1_librarian = Librarian.objects.filter(library = 'lib1')
+lib1_librarian = Librarian.objects.get(library='lib1')
