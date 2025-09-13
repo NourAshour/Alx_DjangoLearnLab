@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.views.generic import DetailView
 from relationship_app.models import Book, Library
 
-def BookView(request):
+def list_books(request):
     books = Book.objects.all()
     context = {'books' : books}
     return render(request, 'list_books.html')
